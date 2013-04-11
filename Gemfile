@@ -25,3 +25,4 @@ gem 'jquery-rails'
 #For authentication
 gem 'devise'
 gem 'oauth-plugin'
+gem 'debugger'
