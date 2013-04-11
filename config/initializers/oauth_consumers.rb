@@ -2,7 +2,6 @@
 # each entry needs a corresponding token model.
 #
 # eg. :twitter => TwitterToken, :hour_feed => HourFeedToken etc.
-#
 # OAUTH_CREDENTIALS={
 #   :twitter=>{
 #     :key=>"",
@@ -63,6 +62,11 @@
 # }
 #
 OAUTH_CREDENTIALS={
+  :test =>{
+    :key => "L808Pkq2isydyYy391YB6wkVbWpGWYgeg8db656o",
+     :secret => "TttXikfk9wDV1ubuxQQzJbAo4Me0rt9hc5UnhCwK",
+     :expose => true
+  }
 } unless defined? OAUTH_CREDENTIALS
 
 load 'oauth/models/consumers/service_loader.rb'

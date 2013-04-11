@@ -8,4 +8,10 @@ class User < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
   # attr_accessible :title, :body
+
+  has_one  :test, :class_name=>"TestToken", :dependent=>:destroy
 end
+
+
+#Consumer Key: L808Pkq2isydyYy391YB6wkVbWpGWYgeg8db656o
+#Consumer Secret: TttXikfk9wDV1ubuxQQzJbAo4Me0rt9hc5UnhCwK
